@@ -10,7 +10,7 @@ class App extends React.Component {
   }
 }
 
-function mapPropsToState(state) {
+function mapStateToProps(state) {
   return state.news;
 }
 
@@ -20,4 +20,4 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-export default connect(mapPropsToState, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
