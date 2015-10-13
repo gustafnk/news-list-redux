@@ -1,0 +1,100 @@
+[
+  {
+    "source_id": 11,
+    "headline": "Volkswagen Group Sverige: Volkswagen AG tillkännager plan för att åtgärda dieselbilar med EA 189 EU5-motorer",
+    "lang": "sv",
+    "news_id": 1,
+    "type": "NEWS",
+    "timestamp": 1443547886000
+  },
+  {
+    "source_id": 8,
+    "headline": "SOLBIO: Solör Bioenergi Holding AB (publ) - Group reorganization completed in Q3 2015",
+    "lang": "en",
+    "news_id": 2,
+    "type": "NEWS",
+    "timestamp": 1443548413000
+  },
+  {
+    "source_id": 9,
+    "headline": "Fingerprint Cards AB: FPC:s OneTouch touchsensor FPC1025 i Googles smartphones Nexus 5X och Nexus 6P",
+    "instruments": [
+      16333606,
+      16310570
+    ],
+    "lang": "sv",
+    "news_id": 3,
+    "type": "NEWS",
+    "timestamp": 1443549654000
+  },
+  {
+    "source_id": 9,
+    "headline": "Fingerprint Cards AB: FPCs OneTouch FPC1025 fingerprint sensor in Googles Nexus 5X and Nexus 6P smartphones",
+    "instruments": [
+      16333606,
+      16310570
+    ],
+    "lang": "en",
+    "news_id": 4,
+    "type": "NEWS",
+    "timestamp": 1443549654000
+  },
+  {
+    "source_id": 8,
+    "headline": "SOLBIO: Solör Bioenergi Holding AB (publ) - Notice to written procedure",
+    "lang": "en",
+    "news_id": 5,
+    "type": "NEWS",
+    "timestamp": 1443550626000
+  },
+  {
+    "source_id": 9,
+    "headline": "Workday Inc.: Workday Unveils Workday Learning ",
+    "lang": "en",
+    "news_id": 6,
+    "type": "NEWS",
+    "timestamp": 1443551858000
+  },
+  {
+    "source_id": 8,
+    "headline": "SOLBIO: Solør Bioenergy Group har gjennomført en aksjeemisjon på SEK 50 mill.",
+    "lang": "no",
+    "news_id": 7,
+    "type": "NEWS",
+    "timestamp": 1443552589000
+  },
+  {
+    "source_id": 11,
+    "headline": "Aktiebolaget Fastator: Aktiebolaget Fastator (publ) genomför sammanläggning av aktier och byte av ISIN kod",
+    "instruments": [
+      16282216,
+      16283769
+    ],
+    "lang": "sv",
+    "news_id": 8,
+    "type": "NEWS",
+    "timestamp": 1443553694000
+  },
+  {
+    "source_id": 7,
+    "headline": "NUNA MINERALS A/S: Suspension of payments to be maintained until end of November 2015",
+    "instruments": [
+      16310746
+    ],
+    "lang": "en",
+    "news_id": 9,
+    "type": "NEWS",
+    "timestamp": 1443554649000
+  },
+  {
+    "source_id": 7,
+    "headline": "NUNA MINERALS A/S: Betalingsstandsning opretholdes indtil udgangen af november 2015",
+    "instruments": [
+      16310746
+    ],
+    "lang": "da",
+    "news_id": 10,
+    "type": "NEWS",
+    "timestamp": 1443554649000
+  }
+]

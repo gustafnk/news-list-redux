@@ -1,0 +1,96 @@
+[
+  {
+    "source_id": 9,
+    "headline": "OSE Pharma Group: OSE Pharma to participate to the Large & Midcap Event in Paris  on October 7-8, 2015",
+    "lang": "en",
+    "news_id": 11,
+    "type": "NEWS",
+    "timestamp": 1443542465000
+  },
+  {
+    "source_id": 13,
+    "headline": "Europa/aktier: Flere tæsk til medicinal- og biotekindustrien",
+    "instruments": [
+      16339879,
+      16353533,
+      16310128,
+      16334155,
+      16310253
+    ],
+    "lang": "da",
+    "news_id": 12,
+    "type": "NEWS",
+    "timestamp": 1443542566000
+  },
+  {
+    "source_id": 7,
+    "headline": "Athena IT-Group\\: Forslag om sletning af Athena IT-Group A/S aktier fra handel p Nasdaq OMX Copenhagen A/S\\, First North",
+    "instruments": [
+      16310497
+    ],
+    "lang": "da",
+    "news_id": 13,
+    "type": "NEWS",
+    "timestamp": 1443545012000
+  },
+  {
+    "source_id": 9,
+    "headline": "Keyware Technologies: Keyware presents itself at European Large & Midcap Event in Paris",
+    "lang": "en",
+    "news_id": 14,
+    "type": "NEWS",
+    "timestamp": 1443546042000
+  },
+  {
+    "source_id": 9,
+    "headline": "Riksgälden: Kingdom of Sweden raises USD 1 billion in 3-year bonds at 1.041 %",
+    "lang": "en",
+    "news_id": 15,
+    "type": "NEWS",
+    "timestamp": 1443546953000
+  },
+  {
+    "source_id": 9,
+    "headline": "Riksgälden: Riksgälden lånar 1 miljard dollar på 3 år till ränta 1,041 %",
+    "lang": "sv",
+    "news_id": 16,
+    "type": "NEWS",
+    "timestamp": 1443546953000
+  },
+  {
+    "source_id": 8,
+    "headline": "SOLBIO: Solør Bioenergy Group completes private placement of SEK 50 mill.",
+    "lang": "en",
+    "news_id": 17,
+    "type": "NEWS",
+    "timestamp": 1443547172000
+  },
+  {
+    "source_id": 11,
+    "headline": "Volkswagen Group Sverige: Volkswagen AG tillkännager plan för att åtgärda dieselbilar med EA 189 EU5-motorer",
+    "lang": "sv",
+    "news_id": 18,
+    "type": "NEWS",
+    "timestamp": 1443547886000
+  },
+  {
+    "source_id": 8,
+    "headline": "SOLBIO: Solör Bioenergi Holding AB (publ) - Group reorganization completed in Q3 2015",
+    "lang": "en",
+    "news_id": 19,
+    "type": "NEWS",
+    "timestamp": 1443548413000
+  },
+  {
+    "source_id": 9,
+    "headline": "Fingerprint Cards AB: FPC:s OneTouch touchsensor FPC1025 i Googles smartphones Nexus 5X och Nexus 6P",
+    "instruments": [
+      16333606,
+      16310570
+    ],
+    "lang": "sv",
+    "news_id": 20,
+    "type": "NEWS",
+    "timestamp": 1443549654000
+  }
+]
