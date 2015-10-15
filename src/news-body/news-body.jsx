@@ -12,15 +12,13 @@ class NewsBody extends React.Component {
   }
 
   render() {
-    const { selected } = this.props;
-
-    if(selected && this.props.isFetching) {
+    if(this.props.isFetching) {
       return (
         <div>Loading news body..</div>
       );
     }
 
-    const newsBody = this.props.newsBody[selected];
+    const newsBody = this.props.newsBody[this.props.selected];
     return (
       <div>{ newsBody ? newsBody.body : '' }</div>
     );
