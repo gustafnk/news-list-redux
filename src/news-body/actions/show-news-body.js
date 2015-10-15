@@ -5,4 +5,4 @@ export default function showNewsBody(data) {
     data,
     type: SHOW_NEWS_BODY,
   };
-};
+}

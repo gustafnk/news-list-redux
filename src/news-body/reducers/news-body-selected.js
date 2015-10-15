@@ -1,4 +1,4 @@
-import { SHOW_NEWS_BODY } from './../../actions';
+import { SHOW_NEWS_BODY } from './../actions';
 
 const initialState = 0;
 
