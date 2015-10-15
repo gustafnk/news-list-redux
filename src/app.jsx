@@ -1,23 +1,16 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { NewsListContainer, actions } from './news-list';
+import { NewsListContainer } from './news-list';
+import { NewsBodyContainer } from './news-body';
 
 class App extends React.Component {
   render() {
     return (
-      <NewsListContainer { ...this.props } />
+      <div>
+        <NewsBodyContainer { ...this.props } />
+        <NewsListContainer { ...this.props } />
+      </div>
     );
   }
 }
 
-function mapPropsToState(state) {
-  return state.news;
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    getNews: () => dispatch(actions.getNews())
-  }
-}
-
-export default connect(mapPropsToState, mapDispatchToProps)(App);
+export default App;

@@ -26,7 +26,7 @@ class NewsList extends React.Component {
     }
 
     const news = this.props.news.map(
-      newsItem => <NewsItem key={newsItem.news_id} newsItem={newsItem} />);
+      newsItem => <NewsItem key={ newsItem.news_id } newsItem={ newsItem } onSelect={ this.props.showNewsBody }/>);
 
     return (
       <div>

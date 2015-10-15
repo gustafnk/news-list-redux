@@ -25,7 +25,7 @@ export function newsRequestFailure(data) {
 export default function getNews() {
   return (dispatch, getState) => {
     const state = getState();
-    const offset = state.news.offset;
+    const offset = state.newsList.offset;
     dispatch(newsRequest());
     return api.get('/api/news', { offset, limit: 10 })
       .then(({ data }) => dispatch(newsRequestSuccess(data)))
