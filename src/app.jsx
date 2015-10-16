@@ -1,7 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { NewsListContainer } from './news-list';
-import { NewsBodyContainer, actions } from './news-body';
+import NewsBody from './news-body';
+
+const { NewsBodyContainer, actions: newsBodyActions } = NewsBody;
 
 class App extends React.Component {
   constructor(props) {
@@ -29,7 +31,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    showNewsBody: data => dispatch(actions.showNewsBody(data))
+    showNewsBody: data => dispatch(newsBodyActions.showNewsBody(data))
   };
 }
 
