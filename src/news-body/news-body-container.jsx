@@ -6,7 +6,10 @@ import NewsBody from './news-body';
 class NewsBodyContainer extends React.Component {
   render() {
     return (
+      <div>
+
       <NewsBody { ...this.props } />
+      </div>
     );
   }
 }
@@ -17,7 +20,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    getNewsBody: () => dispatch(getNewsBody())
+    getNewsBody: (id) => dispatch(getNewsBody(id))
   };
 }
 

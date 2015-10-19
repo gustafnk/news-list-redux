@@ -1,25 +1,34 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { NewsListContainer } from './news-list';
-import NewsBody from './news-body';
+import { NewsBodyContainer } from './news-body';
 
-const { NewsBodyContainer, actions: newsBodyActions } = NewsBody;
+import WidgetRouter from './widget-router';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.showNewsBody = this.showNewsBody.bind(this);
-  }
 
-  showNewsBody(data) {
-    this.props.showNewsBody(data);
-  }
+class NewsListAndBodyContainer extends React.Component {
 
   render() {
     return (
       <div>
-        <NewsBodyContainer { ...this.props } />
-        <NewsListContainer showNewsBody={ this.showNewsBody } { ...this.props } />
+        <NewsBodyContainer {...this.props} />
+        <NewsListContainer {...this.props} />
+      </div>
+    );
+  }
+}
+
+const routes = {
+  '/news': NewsListContainer,
+  '/news/:id': NewsListAndBodyContainer
+};
+
+class App extends React.Component {
+
+  render() {
+    return (
+      <div data-widget-container>
+        <WidgetRouter routes={routes} initialUrl='/news' />
       </div>
     );
   }
@@ -30,9 +39,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return {
-    showNewsBody: data => dispatch(newsBodyActions.showNewsBody(data))
-  };
+  return {};
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

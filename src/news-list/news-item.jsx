@@ -1,20 +1,16 @@
 import React from 'react';
 
 class NewsItem extends React.Component {
-  constructor(props) {
-    super(props);
-    this.onClick = this.onClick.bind(this);
-  }
 
-  onClick() {
+  getHashLink() {
     const { news_id } = this.props.newsItem;
-    this.props.onSelect({ news_id });
+    return '#/news/' + news_id;
   }
 
   render() {
     return (
-      <li onClick={ this.onClick }>
-        { this.props.newsItem.headline }
+      <li>
+        <a href={ this.getHashLink() }>{ this.props.newsItem.headline }</a>
       </li>
     );
   }
@@ -22,7 +18,6 @@ class NewsItem extends React.Component {
 
 NewsItem.propTypes = {
   newsItem: React.PropTypes.object.isRequired,
-  onSelect: React.PropTypes.func.isRequired,
 };
 
 export default NewsItem;

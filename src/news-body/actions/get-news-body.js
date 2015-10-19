@@ -23,10 +23,10 @@ export function newsBodyRequestFailure(data) {
   }
 }
 
-export default function getNewsBody() {
+export default function getNewsBody(id) {
   return (dispatch, getState) => {
     const state = getState();
-    const news_id = state.newsBody.selected;
+    const news_id = id;
     dispatch(newsBodyRequest({ news_id }));
     return api.get('/api/news/{news_id}', { news_id })
       .then(({ data }) => dispatch(newsBodyRequestSuccess(data)))

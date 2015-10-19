@@ -1,14 +1,15 @@
 import React from 'react';
 
 class NewsBody extends React.Component {
-  shouldComponentUpdate(nextProps, nextState) {
-    return this.isFetchingChanged(nextProps) || this.isNewNewsBodySelected(nextProps);
-  }
 
   componentWillUpdate(nextProps) {
-    if (this.isNewNewsBodySelected(nextProps)) {
-      this.props.getNewsBody();
-    }
+    if (nextProps.id === this.props.id) return;
+
+    this.props.getNewsBody(nextProps.id);
+  }
+
+  componentWillMount() {
+    this.props.getNewsBody(this.props.id);
   }
 
   render() {
@@ -18,19 +19,10 @@ class NewsBody extends React.Component {
       );
     }
 
-    const newsBody = this.props.newsBody[this.props.selected];
+    const newsBody = this.props.newsBody[this.props.id];
     return (
       <div>{ newsBody ? newsBody.body : '' }</div>
     );
-  }
-
-  isFetchingChanged({ isFetching }) {
-    return isFetching || (this.props.isFetching && !isFetching);
-  }
-
-  isNewNewsBodySelected({ selected }) {
-    return (!this.props.selected && selected) ||
-      (this.props.selected && selected && this.props.selected !== selected);
   }
 }
 
