@@ -9,6 +9,8 @@ class NewsBody extends React.Component {
   }
 
   componentWillMount() {
+    if (!this.props.id) return;
+
     this.props.getNewsBody(this.props.id);
   }
 
