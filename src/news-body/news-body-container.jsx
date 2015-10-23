@@ -7,8 +7,7 @@ class NewsBodyContainer extends React.Component {
   render() {
     return (
       <div>
-
-      <NewsBody { ...this.props } />
+        <NewsBody { ...this.props } />
       </div>
     );
   }
